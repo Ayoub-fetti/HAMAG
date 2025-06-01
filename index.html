@@ -52,66 +52,71 @@
             </div>
         </form>
     </div>
-    
-
+  
     <!-- PDF TEMPLATE AMÉLIORÉ -->
-    <div id="pdf-template" class="hidden">
-      <div id="pdf-content" class="bg-white p-10 w-[210mm] min-h-[297mm] mx-auto" style="font-family: Arial, sans-serif; position: relative; box-sizing: border-box;">
+<div id="pdf-template" class="hidden">
+  <div id="pdf-content" class="bg-white p-10 w-[210mm] min-h-[297mm] mx-auto" style="font-family: Arial, sans-serif; position: relative; box-sizing: border-box;">
 
-        <div class="flex justify-between items-start mb-10">
-          <div class="flex flex-col">
-            <img src="logo.jpg" alt="HAMAG Logo" class="h-24 mb-16">
-            <div class="text-[28px] font-bold text-[#1a4e7a]">BON DE LIVRAISON</div>
-          </div>
-          <div class="border border-black p-4 w-64 h-24 flex items-center justify-center">
-            <span class="text-2xl font-bold" id="preview-jesa">JESA</span>
-          </div>
-        </div>
-
-        <table class="w-full border-collapse border border-gray-800 mb-6 text-sm">
-          <thead class="bg-blue-900 text-white text-center">
-            <tr>
-              <th class="border border-gray-800 p-2">N° DE PIECE</th>
-              <th class="border border-gray-800 p-2">DATE</th>
-              <th class="border border-gray-800 p-2">DESTINATION</th>
-              <th class="border border-gray-800 p-2">N° D.U.M</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="text-center">
-              <td class="border border-gray-800 p-2" id="preview-pieceNumber">25TR01652</td>
-              <td class="border border-gray-800 p-2" id="preview-deliveryDate">28/05/2025</td>
-              <td class="border border-gray-800 p-2" id="preview-destination">JORF LASFAR</td>
-              <td class="border border-gray-800 p-2" id="preview-dumNumber">3010102025005656 L</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table class="w-full border-collapse border border-gray-800 mb-10 text-sm">
-          <thead class="bg-blue-900 text-white text-center">
-            <tr>
-              <th class="border border-gray-800 p-2 w-1/4">Référence</th>
-              <th class="border border-gray-800 p-2 w-3/4">Désignation</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="border border-gray-800 p-2 text-center" id="preview-reference">25TR01652</td>
-              <td class="border border-gray-800 p-2" id="preview-designation">
-                2 COLIS / LTA 014-63776510<br>WAVE 2 EAST /<br>P2417_SH65_ENERGYRECOVERY USA
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="text-[9pt] absolute bottom-6 left-10 right-10 text-gray-700 leading-tight">
-          <p>Sarl au capital de 1 000 000,00 DH</p>
-          <p>SIEGE SOCIAL : 149 Avenue Lalla Yacout Etg 3 N°89, Casablanca-maroc</p>
-          <p>Tél : +212 (0)522 245 858 / 522 248 485 - Fax : +212 (0)522 247 247 - transport@hamag.ma</p>
-          <p>www.hamag.ma - RC : 490769 - TP : 32485275 - IF : 48564189 - CNSS : 2491113 - ICE : 002680234000047</p>
-        </div>
+    <div class="flex justify-between items-start mb-10">
+      <div class="flex flex-col">
+        <img src="logo.png" alt="HAMAG Logo" class="h-32 mb-16">
+        <div class="text-[28px] font-bold text-[#1a4e7a] ml-4">BON DE LIVRAISON</div>
+      </div>
+      <div class="border border-black p-4 w-64 h-24 flex items-center justify-center">
+        <span class="text-2xl font-bold" id="preview-jesa">JESA</span>
       </div>
     </div>
+
+    <!-- Table 1 - Agrandie et centrée -->
+    <div class="flex justify-center mb-14">
+      <table class="w-[95%] border-collapse border border-gray-800 text-sm">
+        <thead class="bg-blue-900 text-white text-center">
+          <tr>
+            <th class="border border-gray-800 p-6">N° DE PIECE</th>
+            <th class="border border-gray-800 p-6">DATE</th>
+            <th class="border border-gray-800 p-6">DESTINATION</th>
+            <th class="border border-gray-800 p-6">N° D.U.M</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-center">
+            <td class="border border-gray-800 p-6" id="preview-pieceNumber">25TR01652</td>
+            <td class="border border-gray-800 p-6" id="preview-deliveryDate">28/05/2025</td>
+            <td class="border border-gray-800 p-6" id="preview-destination">JORF LASFAR</td>
+            <td class="border border-gray-800 p-6" id="preview-dumNumber">3010102025005656 L</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Table 2 - Agrandie et centrée -->
+    <div class="flex justify-center mb-12">
+      <table class="w-[95%] border-collapse border border-gray-800 text-sm">
+        <thead class="bg-blue-900 text-white text-center">
+          <tr>
+            <th class="border border-gray-800 p-6 w-1/4">Référence</th>
+            <th class="border border-gray-800 p-6 w-3/4">Désignation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-800 p-6 text-center" id="preview-reference">25TR01652</td>
+            <td class="border border-gray-800 p-6" id="preview-designation">
+              2 COLIS / LTA 014-63776510<br>WAVE 2 EAST /<br>P2417_SH65_ENERGYRECOVERY USA
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="text-[9pt] absolute bottom-6 left-10 right-10 text-gray-700 leading-tight">
+      <p>Sarl au capital de 1 000 000,00 DH</p>
+      <p>SIEGE SOCIAL : 149 Avenue Lalla Yacout Etg 3 N°89, Casablanca-maroc</p>
+      <p>Tél : +212 (0)522 245 858 / 522 248 485 - Fax : +212 (0)522 247 247 - transport@hamag.ma</p>
+      <p>www.hamag.ma - RC : 490769 - TP : 32485275 - IF : 48564189 - CNSS : 2491113 - ICE : 002680234000047</p>
+    </div>
+  </div>
+</div>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
